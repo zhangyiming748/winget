@@ -7,11 +7,9 @@ import (
 	"strings"
 )
 
-func Export(root string) {
-	if !strings.HasSuffix(root, "export.json"){
-		log.Printf("导出文件的路径必须以export.json结尾,当前路径:%s\n", root)
-	}else{
-		root= filepath.Join(root, "export.json")
+func Export(root string, download bool) {
+	if !strings.HasSuffix(root, "export.json") {
+		root = filepath.Join(root, "export.json")
 	}
 	args := []string{}
 	args = append(args, "export")

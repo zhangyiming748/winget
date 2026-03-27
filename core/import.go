@@ -6,29 +6,34 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"time"
 )
 
-func Import(src string) {
+func Import(src string, download bool) {
 	log.Println("Importing...")
-	root, err := parse(src)
+	ids, err := Parse(src)
 	if err != nil {
 		log.Fatalf("解析失败：%v", err)
 	}
-	sources := root.Sources[0]
-	for i, source := range sources.Packages {
-		log.Printf("包 %d: %s\n", i, source.PackageIdentifier)
+	for i, id := range ids {
+		log.Printf("包 %d: %s\n", i, id)
 		args := []string{"install"}
-		args = append(args, "--id", source.PackageIdentifier)
+		args = append(args, "--id", id)
 		args = append(args, "--accept-package-agreements")
 		args = append(args, "--accept-source-agreements")
 		cmd := exec.Command("winget", args...)
 		log.Printf("安装命令:%s\n", cmd.String())
 		if out, err := cmd.CombinedOutput(); err != nil {
-			log.Printf("安装%s失败:%v\t输出:%s\n", source.PackageIdentifier, err, string(out))
+			log.Printf("安装%s失败:%v\t输出:%s\n", id, err, string(out))
 		} else {
-			log.Printf("安装%s成功\t输出:%s\n", source.PackageIdentifier, string(out))
+			log.Printf("安装%s成功\t输出:%s\n", id, string(out))
 		}
+	}
+	if download {
+		home, _ := os.UserHomeDir()
+		dir := filepath.Join(home, "Downloads")
+		Download(ids, dir)
 	}
 }
 
@@ -56,7 +61,7 @@ type SourceDetails struct {
 	Type       string `json:"Type"`
 }
 
-func parse(fp string) (*Root, error) {
+func Parse(fp string) ([]string, error) {
 	var root Root
 
 	// 读取文件内容
@@ -69,6 +74,13 @@ func parse(fp string) (*Root, error) {
 	if err := json.Unmarshal(data, &root); err != nil {
 		return nil, fmt.Errorf("解析 JSON 失败：%w", err)
 	}
-
-	return &root, nil
+	// 在这里提取出结构体每一个包的PackageIdentifier并打印出来
+	var ids []string
+	for _, source := range root.Sources {
+		for i, pkg := range source.Packages {
+			fmt.Printf("包 %d: %s\n", i+1, pkg.PackageIdentifier)
+			ids = append(ids, pkg.PackageIdentifier)
+		}
+	}
+	return ids, nil
 }
