@@ -4,13 +4,18 @@ import (
 	"log"
 	"os/exec"
 	"path/filepath"
+	"strings"
 )
 
 func Export(root string) {
-	f := filepath.Join(root, "export.json")
+	if !strings.HasSuffix(root, "export.json"){
+		log.Printf("导出文件的路径必须以export.json结尾,当前路径:%s\n", root)
+	}else{
+		root= filepath.Join(root, "export.json")
+	}
 	args := []string{}
 	args = append(args, "export")
-	args = append(args, "--output", f)
+	args = append(args, "--output", root)
 	cmd := exec.Command("winget", args...)
 	log.Printf("导出文件的命令是:%s\n", cmd.String())
 	if out, err := cmd.CombinedOutput(); err != nil {
@@ -18,5 +23,4 @@ func Export(root string) {
 	} else {
 		log.Printf("导出文件成功:%v,输出%s\n", err, string(out))
 	}
-
 }
