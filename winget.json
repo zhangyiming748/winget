@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2026-03-30T12:39:58.823-00:00",
+	"CreationDate" : "2026-03-30T20:21:12.585-00:00",
 	"Sources" : 
 	[
 		{
@@ -22,16 +22,10 @@
 					"PackageIdentifier" : "ClashVergeRev.ClashVergeRev"
 				},
 				{
-					"PackageIdentifier" : "Docker.DockerDesktop"
-				},
-				{
 					"PackageIdentifier" : "Git.Git"
 				},
 				{
 					"PackageIdentifier" : "JetBrains.GoLand.EAP"
-				},
-				{
-					"PackageIdentifier" : "REALiX.HWiNFO"
 				},
 				{
 					"PackageIdentifier" : "ImageMagick.ImageMagick"
@@ -43,10 +37,16 @@
 					"PackageIdentifier" : "Microsoft.VSTOR"
 				},
 				{
+					"PackageIdentifier" : "PremiumSoft.NavicatPremiumLite"
+				},
+				{
 					"PackageIdentifier" : "Notepad++.Notepad++"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.OneDrive"
+				},
+				{
+					"PackageIdentifier" : "PPSSPPTeam.PPSSPP"
 				},
 				{
 					"PackageIdentifier" : "PIKCLOUD.PikPak"
@@ -67,10 +67,16 @@
 					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
+					"PackageIdentifier" : "OpenJS.NodeJS.LTS"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2010.x64"
 				},
 				{
 					"PackageIdentifier" : "GitHub.cli"
+				},
+				{
+					"PackageIdentifier" : "Eassos.DiskGenius"
 				},
 				{
 					"PackageIdentifier" : "RaspberryPiFoundation.RaspberryPiImager"
@@ -85,7 +91,7 @@
 					"PackageIdentifier" : "RealVNC.VNCViewer"
 				},
 				{
-					"PackageIdentifier" : "PDFgear.PDFgear"
+					"PackageIdentifier" : "Microsoft.PowerShell.Preview"
 				},
 				{
 					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
@@ -148,7 +154,7 @@
 					"PackageIdentifier" : "Cloudflare.cloudflared"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.DotNet.AspNetCore.8"
+					"PackageIdentifier" : "Microsoft.DotNet.Runtime.8"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.5"
@@ -160,10 +166,10 @@
 					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.7"
 				},
 				{
-					"PackageIdentifier" : "Intel.IntelDriverAndSupportAssistant"
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.8"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.8"
+					"PackageIdentifier" : "Intel.IntelDriverAndSupportAssistant"
 				},
 				{
 					"PackageIdentifier" : "Python.Launcher"
@@ -193,10 +199,22 @@
 					"PackageIdentifier" : "Microsoft.VCRedist.2010.x86"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.DotNet.Runtime.10"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2012.x64"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.DotNet.AspNetCore.8"
+				},
+				{
 					"PackageIdentifier" : "Baidu.BaiduNetdisk"
+				},
+				{
+					"PackageIdentifier" : "NetEase.CloudMusic"
+				},
+				{
+					"PackageIdentifier" : "agalwood.Motrix"
 				},
 				{
 					"PackageIdentifier" : "kangfenmao.CherryStudio"
@@ -211,13 +229,22 @@
 					"PackageIdentifier" : "Bin-Huang.Chatbox.CommunityEdition"
 				},
 				{
+					"PackageIdentifier" : "MarkText.MarkText"
+				},
+				{
 					"PackageIdentifier" : "ChuyuTeam.DISM++"
 				},
 				{
 					"PackageIdentifier" : "Google.Chrome.EXE"
 				},
 				{
+					"PackageIdentifier" : "Gyan.FFmpeg.Essentials"
+				},
+				{
 					"PackageIdentifier" : "JernejSimoncic.Wget"
+				},
+				{
+					"PackageIdentifier" : "MediaArea.MediaInfo"
 				},
 				{
 					"PackageIdentifier" : "Meltytech.Shotcut"
@@ -227,6 +254,9 @@
 				},
 				{
 					"PackageIdentifier" : "Balena.Etcher"
+				},
+				{
+					"PackageIdentifier" : "ch.LosslessCut"
 				},
 				{
 					"PackageIdentifier" : "Ruihu.Apifox"
@@ -256,7 +286,7 @@
 					"PackageIdentifier" : "Python.Python.3.9"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.Teams"
+					"PackageIdentifier" : "DuckDuckGo.DesktopBrowser"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.AppInstaller"
@@ -300,6 +330,9 @@
 		{
 			"Packages" : 
 			[
+				{
+					"PackageIdentifier" : "XP8CBJ40XLBWKX"
+				},
 				{
 					"PackageIdentifier" : "XPDP273C0XHQH2"
 				}
