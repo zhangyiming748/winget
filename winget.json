@@ -316,6 +316,9 @@
 					"PackageIdentifier" : "Microsoft.WSL"
 				},
 				{
+					"PackageIdentifier" : "CreativeTechnology.OpenAL"
+				},
+				{
 					"PackageIdentifier" : "Debian.Debian"
 				}
 			],
