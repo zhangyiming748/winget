@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2026-03-30T20:21:12.585-00:00",
+	"CreationDate" : "2026-04-03T15:07:19.177-00:00",
 	"Sources" : 
 	[
 		{
@@ -112,10 +112,10 @@
 					"PackageIdentifier" : "AnyDesk.AnyDesk"
 				},
 				{
-					"PackageIdentifier" : "Wagnardsoft.DisplayDriverUninstaller"
+					"PackageIdentifier" : "Microsoft.Edge"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.Edge"
+					"PackageIdentifier" : "CreativeTechnology.OpenAL"
 				},
 				{
 					"PackageIdentifier" : "Tencent.QQ.NT"
@@ -125,9 +125,6 @@
 				},
 				{
 					"PackageIdentifier" : "Valve.Steam"
-				},
-				{
-					"PackageIdentifier" : "EZBSystems.UltraISO"
 				},
 				{
 					"PackageIdentifier" : "Tencent.WeChat"
@@ -235,7 +232,13 @@
 					"PackageIdentifier" : "ChuyuTeam.DISM++"
 				},
 				{
+					"PackageIdentifier" : "Genymobile.scrcpy"
+				},
+				{
 					"PackageIdentifier" : "Google.Chrome.EXE"
+				},
+				{
+					"PackageIdentifier" : "Google.PlatformTools"
 				},
 				{
 					"PackageIdentifier" : "Gyan.FFmpeg.Essentials"
